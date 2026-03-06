@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/nav_text" android:title="Textos" />
+    <item android:id="@+id/nav_buttons" android:title="Botones" />
+    <item android:id="@+id/nav_selection" android:title="Selección" />
+    <item android:id="@+id/nav_list" android:title="Listas" />
+    <item android:id="@+id/nav_info" android:title="Info" />
+</menu>
