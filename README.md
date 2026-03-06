@@ -1,4 +1,5 @@
 TAREA 1: ELEMENTOS BÁSICOS DE INTERFAZ EN KOTLIN
+======================================================
 
 DESCRIPCIÓN DE LA APP:
 Esta aplicación es un proyecto educativo para Android desarrollado en Kotlin. Su objetivo es demostrar de forma práctica e interactiva el funcionamiento de los elementos básicos de la interfaz de usuario (UI). 
