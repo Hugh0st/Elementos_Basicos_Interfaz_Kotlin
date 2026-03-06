@@ -1,10 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SelectionFragment">
+    android:orientation="vertical"
+    android:padding="24dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3. Selección (Check, Radio, Switch)"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Estos elementos permiten elegir opciones. CheckBox es para selecciones múltiples, RadioButton para una sola opción en un grupo, y Switch para prender/apagar."
+        android:layout_marginBottom="24dp"/>
+
+    <CheckBox
+        android:id="@+id/cbTerminos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Acepto los términos y condiciones"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Elige tu nivel:"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/rgNivel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+
+        <RadioButton
+            android:id="@+id/rbPrincipiante"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Principiante" />
+
+        <RadioButton
+            android:id="@+id/rbPro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pro" />
+    </RadioGroup>
+
+    <Switch
+        android:id="@+id/swNotificaciones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Activar notificaciones"
+        android:layout_marginBottom="24dp"/>
+
+    <TextView
+        android:id="@+id/tvResultadoSeleccion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:background="#E0E0E0"
+        android:text="Interactúa con los elementos para ver el resultado aquí."
+        android:textSize="14sp" />
+
+</LinearLayout>
